@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SatisfactionTrackerService } from './satisfaction-tracker.service';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    // Components
+  ],
   imports: [
     CommonModule
   ],
-  exports: []
+  exports: [],
+  providers: [
+    SatisfactionTrackerService
+  ]
 })
 export class SatisfactionTrackerModule { }
