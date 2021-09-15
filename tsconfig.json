@@ -16,7 +16,7 @@
     "paths": {
       "@env/*": ["environments/*"],
       "@srpg-core/*": ["app/core/*"],
-      "@srpg-shared/*": ["app/shared/deeply/nested/user-login/*"],
+      "@srpg-shared/*": ["app/shared/*"],
     }
   },
   "angularCompilerOptions": {
