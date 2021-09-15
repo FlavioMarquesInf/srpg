@@ -1,12 +1,21 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
 
+import { CustomHeaderComponent } from './custom-header/custom-header.component';
 
+const COMPONENTS = [
+  CustomHeaderComponent,
+//   DrawerComponent,
+];
 
 @NgModule({
-  declarations: [],
+  declarations: [COMPONENTS],
+  exports: [COMPONENTS],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    IonicModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SharedModule { }
