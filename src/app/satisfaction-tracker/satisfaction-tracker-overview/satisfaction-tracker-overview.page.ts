@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SatisfactionTrackerService } from '../satisfaction-tracker.service';
 
 @Component({
   selector: 'app-satisfaction-tracker-overview',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SatisfactionTrackerOverviewPage implements OnInit {
 
-  constructor() { }
+  constructor( private satisfactionTrackerService: SatisfactionTrackerService ) { }
 
   ngOnInit() {
   }
